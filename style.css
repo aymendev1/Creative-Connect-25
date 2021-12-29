@@ -1,0 +1,275 @@
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Space+Mono&display=swap");
+
+/*root*/
+:root {
+  --LightOne: "Roboto Mono", monospace;
+  --TitleFont: "Space Mono", monospace;
+  --bggradient: linear-gradient(
+    to right,
+    #ab3e3b,
+    #b8493d,
+    #c4553f,
+    #d06141,
+    #dc6e43,
+    #e17845,
+    #e58147,
+    #e98b49,
+    #e8944d,
+    #e89d53,
+    #e7a559,
+    #e6ad60
+  );
+}
+body,
+section {
+  /*overflow-y: hidden;*/
+  overflow-x: hidden;
+}
+.fixed {
+  overflow-y: hidden;
+}
+header,
+footer {
+  background: var(--bggradient);
+  color: #ffe6cd;
+  width: 100%;
+  height: 100vh;
+}
+header .container-fluid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+header .row,
+.section-03 .row {
+  width: 80%;
+  margin: auto;
+}
+header h1 {
+  font-family: var(--TitleFont);
+  font-size: 8rem;
+}
+header h6,
+.section-01 p,
+.section-02 p {
+  font-family: var(--LightOne);
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+/*Button edited on cssbutton.io*/
+button {
+  padding: 0.9em 2em;
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: var(--LightOne);
+  color: #ffe6cd;
+  border-radius: 15px !important;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #ffe6cd;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+button:hover::before {
+  width: 105%;
+}
+button:hover {
+  color: #111;
+}
+
+/********Section 01 ***************/
+.section-01 {
+  background-color: #ffe6cd;
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  padding-top: 6rem;
+}
+.section-01 .container,
+.section-02 .container,
+.section-03.container {
+  width: 80%;
+}
+.section-01 h3,
+.section-02 h3,
+footer h3 {
+  font-family: var(--TitleFont);
+  font-size: 5rem;
+  padding-bottom: 3rem;
+}
+.section-01 img {
+  border-radius: 30px;
+}
+.section-01 .img2 {
+  margin-left: 5vmin;
+  margin-top: 15vmin;
+}
+/********** Section 02*************/
+.section-02,
+.section-03 {
+  background-color: #000;
+  color: #ffe6cd;
+  width: 100%;
+  height: 100vh;
+}
+.section-02,
+.section-03 {
+  padding-top: 2rem;
+}
+.Expectations {
+  margin-top: 10vmin;
+}
+.section-02 h6 {
+  font-family: var(--LightOne);
+  font-size: 1.5rem;
+  color: #ff8345;
+}
+.section-03 h3 {
+  font-family: var(--TitleFont);
+  font-size: 5rem;
+  text-align: center;
+}
+.section-03 .row {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+.section-03 .card {
+  padding-top: 1.5rem;
+  background-color: transparent;
+  border: 0 none;
+  text-align: center;
+  font-family: var(--LightOne);
+  margin: auto !important;
+}
+.section-03 .card-img-top {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+.section-03 .card-title {
+  color: #ff8345;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+}
+.section-03 .card-text {
+  font-size: 0.9rem;
+}
+footer .container {
+  padding-top: 2%;
+}
+footer h6 {
+  font-family: var(--LightOne);
+  font-size: 2rem;
+  color: #ffe6cd;
+}
+footer p {
+  font-family: var(--LightOne);
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  color: #000;
+}
+.down {
+  margin-top: 20vmax !important;
+}
+/***********Form************/
+open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  background: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  height: 100vh;
+  width: 100%;
+  z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add styles to the form container */
+.form {
+  color: #ffe6cd;
+  margin: auto;
+  border-radius: 56px;
+  background: #000;
+  height: 60%;
+  width: 40%;
+  padding: 50px;
+  transform: translate(0%, 30%);
+}
+.form h1 {
+  font-family: var(--TitleFont);
+  font-size: 3.5rem;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.form label {
+  font-family: var(--LightOne);
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.form input {
+  float: right;
+  width: 80%;
+  font-family: var(--LightOne);
+  font-size: 1rem;
+  background-color: #ffe6cd;
+  color: #000;
+  border-radius: 10px;
+  height: 2.5rem;
+  margin-bottom: 20px;
+}
+.formbutton {
+  border: 2px solid #ffe6cd;
+  background-color: #ffe6cd;
+  color: #000;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.formbutton::before {
+  background-color: #000;
+}
+.formbutton:hover {
+  color: #ffe6cd;
+}

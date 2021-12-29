@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Connect 2025</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="resp-style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Creativ Connect 2025</h1>
+          </div>
+          <div class="col-md-6">
+            <div class="center">
+              <h6>A DIGITAL MEET-UP FOR CREATIVE FREELANCERS</h6>
+              <h6>October 12-15, 2025</h6>
+              <button onclick="openForm()">REGISTER NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-01">
+        <div class="container">
+          <div class="row">
+            <h3>Strength in Numbers</h3>
+            <div class="col-md-6">
+              <img src="/src/01.jpg" width="40%" alt="" srcset="" />
+              <img
+                src="/src/02.jpg"
+                width="40%"
+                alt=""
+                srcset=""
+                class="img2"
+              />
+            </div>
+            <div class="col-md-6">
+              <p>
+                Creativ Connect was created five years afo with the simple
+                intention of bringing freelancers togheter . When designers
+                storytellers , creators,and dreamers fill a room,ideas abound
+                and the future gets more exciting.
+              </p>
+              <p>
+                This year, we're filling cyberspace! Our first digital meet-up
+                allows creatives from anywhere in the worls to join in the
+                conversation . Make sure you're part of it .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-02">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>What to Expect</h3>
+            </div>
+            <div class="col-md-6">
+              <div class="Expectations">
+                <h6>01 Valuable Talks</h6>
+                <p>Learns from well-known industry experts .</p>
+              </div>
+              <div class="Expectations">
+                <h6>02 Networking Channels</h6>
+                <p>Opportunities to chat with fellow creatives .</p>
+              </div>
+              <div class="Expectations">
+                <h6>03 Freelance Roundtables</h6>
+                <p>
+                  Digital rooms where you can discuss anything and everything .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-03">
+        <div class="container">
+          <h3>Keynote Speakers</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/src/S01.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Elvira Montanez</h5>
+                  <p class="card-text">
+                    A graphic Designer with over two decades of creative work
+                    ,Elivera has made a name for herself in the digtal space
+                    with her bold, punchy style.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/src/S02.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Zak Lanberg</h5>
+                  <p class="card-text">
+                    Brining a fresh ,unique aesthethic to the world of
+                    illustration,Zak has won multiple awards ,including the
+                    prestigious Croalstead .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/src/S03.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Aoron Loeb</h5>
+                  <p class="card-text">
+                    Truly a man of letters, Aaron has been making waves as one
+                    of the master storytellers of this generation. He's this
+                    year's Golden Letters awardee.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Ready to Connect ?</h3>
+            <button onclick="openForm()">Reserve Your Spot</button>
+          </div>
+          <div class="col-md-6 down">
+            <h6>Mailing Adress</h6>
+            <p>123 Anywhere St., Any City , State , Country</p>
+            <h6>Email Adress</h6>
+            <p>aymendev@gmail.com</p>
+            <h6>Phone Number</h6>
+            <p>(123) 456 7890</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Form -->
+    <div class="form-popup" id="myForm">
+      <form class="form">
+        <h1>Register</h1>
+
+        <label for="fname"><b>First Name :</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your First Name"
+          name="fname"
+          required
+        /><br /><br />
+        <label for="lname"><b>Last Name :</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your Last Name"
+          name="lname"
+          required
+        /><br /><br />
+        <label for="email"><b>Email :</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your Email"
+          name="email"
+          required
+        /><br /><br />
+
+        <button type="submit" class="formbutton">Register</button>
+        <button type="button" class="formbutton" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+      <!-- End Form -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
